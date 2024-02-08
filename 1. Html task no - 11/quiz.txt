@@ -1,0 +1,9 @@
+you are given 12 files 6 videos and 6 audios 
+
+design a website using html only 
+like 
+
+1.mp3, 2.mp3, 3.mp3 .... 6.mp3
+1.mp4, 2.mp4, 3.mp4 .... 6.mp4
+
+and show all 12 of these files to preview them 

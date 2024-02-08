@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video, Audio & Media in HTML</title>
+</head>
+<body>
+    
+    <h1>Video, Audio & Media in HTML</h1>
+
+    <!-- <video src="video.mp4" height="350" controls autoplay loop muted></video> -->
+    <!-- <video src="video.mp4" height="350" controls></video> -->
+
+
+    <!-- controls are like play , pause , volume -->
+
+    <!-- how to add the thumbnail is by using poster in video.. -->
+
+    <video src="video.mp4" height="350" controls poster="download.jpg"></video>
+
+
+    <!-- <audio src="sachin.mp3" controls autoplay loop></audio> -->
+
+    <!-- <audio src="sachin.mp3" controls ></audio> -->
+
+    
+
+    <!-- <audio src="sachin.mp3" controls preload="metadata"></audio> -->
+
+    <audio src="sachin.mp3" controls preload="auto"></audio>
+
+
+    <!-- What is SVG?
+    SVG stands for Scalable Vector Graphics. Unlike raster images like PNGs or JPGs, SVGs are not pixel-based. They're composed of vectors—mathematical formulas that describe shapes, paths, and fills. This means SVGs can be resized without losing quality. -->
+
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+
+
+
+    <!-- for declaring the svg file you need to add the : xmlns   in the svg tag .... -->
+
+    <!-- if we dont add the xmlns so the file is not going to show us the image  -->
+
+
+    <img src="img.svg" alt="my svg image">
+
+
+    <!-- svg , video and audio all are inline tags so they take their desired space .... -->
+
+    <br>
+
+    <br>
+
+
+
+    <p>  preload attribute : 
+
+
+    The "preload" attribute can have the following values:
+
+    none: This is the default value. It indicates that the browser should not preload the audio file at all. The audio file will only start downloading when the user initiates playback.
+    
+    metadata: This value tells the browser to preload only the metadata of the audio file, such as its duration and basic information about the audio. This can be useful if you want to display the audio duration to the user without fully loading the audio data.
+    
+    auto: This value instructs the browser to preload the entire audio file as much as possible without delaying the loading of other important page content. The browser will try to load the audio file in the background so that it's ready to play when the user decides to start it. 
+</p>
+    
+
+
+    <div>   What is SVG?
+SVG stands for Scalable Vector Graphics. Unlike raster images like PNGs or JPGs, SVGs are not pixel-based. They're composed of vectors—mathematical formulas that describe shapes, paths, and fills. This means SVGs can be resized without losing quality. </div>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+Types of HTML Semantic Tags
+Semantic tags can define different parts of a webpage. 
+
+Let's take a look at the most common semantic HTML elements, divided into two categories based on their usage:
+
+HTML semantic tags for structure
+HTML semantic tags for text
+HTML Semantic Tags for Structure
+Many semantic HTML tags communicate the layout of a page. 
+
+These “structural” tags were introduced when HTML4 got upgraded to HTML5. That's why they're also commonly known as semantic HTML5 tags or semantic HTML5 elements.
+
+ A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form> , <table> , and <article> - Clearly defines its content. -->
+
+        
+
+        Some of the most commonly used semantic HTML tags include
+
+<header> –  define the header of a document or a section
+<nav> –  define a section of navigation links
+<main> –  define the main content of a document
+<section> –  group related content together
+<article> –  define an independent, self-contained piece of content
+<aside> –  define content that is tangentially related to the surrounding content
+<footer> –  define the footer of document
+<figure> –  group multimedia content with a caption
+<figcaption> –  provide a caption or description for multimedia content
+<time> –  define a date or time.
+
+
+
+Here’s a full list: 
+
+<header>: The header tag defines content that should be considered the introductory information of a page or section
+<nav>: The navigation tag is used for navigation links. It can be nested within the <header> tag, but secondary navigation <nav> tags are also commonly used elsewhere on the page.
+<main>: This tag contains the main content (also called the body) of a page. There should be only one tag per page.
+<article>: The article tag defines content that could stand independently of the page or site it’s on. It does not necessarily mean a “blog post.” Think of it more as “an article of clothing”—a self-contained item that can be used in various contexts.
+<section>: Using <section> is a way of grouping nearby content of a similar theme. A section tag differs from an article tag. It isn’t necessarily self-contained, but it forms part of something else. 
+<aside>: An aside element defines content that’s less important. It’s often used for sidebars—areas that add complementary but nonessential information.
+<footer>: You use <footer> at the bottom of a page. It usually includes contact information, copyright information, and some site navigation.
+
+
+
+
+HTML Semantic Tags for Text
+The semantic HTML tags for text are HTML tags that—besides the formatting—also convey the semantic function of the text they contain.
+
+Here are some of the most common examples:
+
+<h1> (heading): The H1 tag marks the top level heading. There’s usually only one H1 heading per page.
+<h2> to <h6> (subheadings): The subheadings of various levels of importance. There can be multiple headings of the same level on a single page. 
+<p> (paragraph): A standalone paragraph of text.
+<a> (anchor): Used to mark up a hyperlink from one page to another.
+<ol> (ordered list): A list of items that are displayed in a particular order, starting with bullet points. One <li> (list item) tag contains a single item in the list.
+<ul> (unordered list): A list of items that do not need to be displayed in a particular order, starting with ordinal numbers. One <li> (list item) tag contains a single item of the list. 
+<q> / <blockquote>: A quotation of the text. Use <blockquote> for long, multi-line quotations and <q> for shorter, inline quotations.
+<em> (emphasis): Used for text that should be emphasized.
+<strong> (strong emphasis): Used for text that should be strongly emphasized.
+<code>: A block of computer code.

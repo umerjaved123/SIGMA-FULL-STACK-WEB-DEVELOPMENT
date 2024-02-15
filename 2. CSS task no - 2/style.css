@@ -1,0 +1,125 @@
+P{
+    background-color: green;
+    color: aquamarine;
+}
+
+span{
+    background-color: greenyellow;
+    color: violet;
+}
+
+h4{
+    background-color: hotpink;
+    color: sienna;
+}
+
+h6{
+    background-color: rgb(8, 132, 111);
+    color: rgb(255, 255, 255);
+}
+
+.red{
+    background-color: red;
+    color: black;
+}
+
+#green{
+    background-color: wheat;
+    color: tomato;
+}
+
+
+
+/* select child inside the tags as well.... */
+
+/* select the parapraph inside the div tag ..... also acts as a child .... as well .....*/
+
+
+div > p{
+
+    background-color: ghostwhite ;
+    color: slateblue;
+
+}
+
+
+div > p > span{
+
+    background-color: rgb(16, 16, 155) ;
+    color: rgb(13, 133, 13);
+
+}
+
+
+/* this is not div direct child  */
+
+div > article > p {
+
+    background-color: rgba(rgb(255, 181, 8), rgb(9, 255, 9), rgb(249, 83, 33), alpha);
+
+    color: rgb(50, 251, 211);
+
+}
+
+
+/* div descendant selector   - descendant means its his part like directly select that tag whether its in inside of a child of a child */
+
+div strong{
+    background-color: rgba(250, 31, 202, 0.386);
+    color: rgb(14, 41, 41);
+}
+
+
+/* but if i am talking about child selector it has to be his direct child .... */
+
+
+
+
+/* its means padding and margin is zero for all the elements ... */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.link{
+    /* background-color: palevioletred; */
+    /* color: rgb(8, 132, 111); */
+
+    color: blue;
+    
+}
+
+
+/* universal selectors.... */
+
+
+
+/* pseudo selector... */
+
+
+.link:active{
+    background-color: red;
+}
+
+.link:hover{
+    color: hotpink;
+}
+
+.link::after{
+    /* background-color: royalblue; */
+
+    color: firebrick;
+}
+
+.link:visited{
+    color: black;
+}
+
+
+
+p:first-child{
+    background-color: aqua;
+}

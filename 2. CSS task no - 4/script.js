@@ -1,0 +1,1 @@
+alert("Javacript is the best language ever");

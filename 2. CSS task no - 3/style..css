@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    background-color: red;
+    color: yellow;
+}
+
+
+.container{
+    width: 100;
+    height: 100;
+    background-color: blue;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.inside{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+}
+
+
+
+.box{
+    background-color: aquamarine;
+    height: 100;
+    width: 100;
+    /* padding: 50px;
+    margin: 50px; */
+
+}
+
+
+.box1{
+    color: rgb(131, 131, 4);
+    /* width: 200px; */
+    padding: 10px;
+    margin: 35px;
+    border: 2px solid black;
+    /* background-color: red; */
+    height: 200px;
+    box-sizing: border-box;
+}
+
+/* box-sizing: border-box   - means include the border and the padding but not the margin ... */
+
+/* 200px as height by including both or all of these my content + border + padding has to be in the mentioned above by using the box-sizing border-box */
+
+/* without box sizing property sirf content ko hi height/width alot hogi. without border box property woh height/width sirf content ko alot hogi */
+
+
+
+
+.box2{
+    color: red;
+    /* width: 200px; */
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid darkblue;
+    /* background-color: red; */
+    height: 200px;
+    box-sizing: border-box;
+}
+
+
+.box3{
+    color: red;
+    /* width: 200px; */
+    padding: 10px;
+    margin: 55px;
+    border: 2px solid darkblue;
+    /* background-color: red; */
+    height: 200px;
+    box-sizing: border-box;
+}
+
+/* margin collapse says that if the magin of two elements is overlapping so the maximum margin has to be implemented at once only ... */
+
+/* if one box has the magin of 35px and other has 25px so the margin of 35px has been selected  */
+
+/* in margin collapse the biggest margin from any box has been selected and given to the space between two boxes */

@@ -1,0 +1,18 @@
+/* https://codepen.io/web-dot-dev/pen/ZELGraM */
+
+
+h1{
+    /* color: orange; */
+
+    /* color: rgba(221, 255, 3, 0.667); */
+
+    /* color: rgb(6, 6, 93); */
+
+    /* color: rgba(239, 8, 239, 0.767); */
+
+    color: hsl(236, 18%, 40%);
+
+    background-color: rgba(221, 255, 3, 0.667);
+}
+
+/* #alpha is the opacity of the color in the rgba ... */

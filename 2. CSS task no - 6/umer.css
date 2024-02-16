@@ -1,0 +1,143 @@
+/* by using the  !important   attribute we change the priority of the inline style ... */
+
+
+/* the specificity of this selector is 1  */
+
+h2{
+    background-color: violet;
+}
+
+
+/* the specificity of this selector is 10 and + add h2 for 1 = so 11 */
+
+
+h2.cred{
+    /* background-color: rgb(238, 255, 0) !important; */
+    background-color: rgb(238, 255, 0) ;
+}
+
+
+/* the specificity of this selector is 10  */
+
+
+.cyellow{
+    background-color: aquamarine;
+}
+
+
+/* the specificity of this selector is 10  */
+
+
+.cpurple{
+    background-color: blue;
+}
+
+
+/* the specificity of this selector is 10  */
+
+
+.yes{
+    background-color: red;
+    color: yellow;
+}
+
+
+/* the specificity of this selector is 10  */
+
+.no{
+    background-color: indigo;
+    color: palegreen;
+}
+
+
+[data-z=b]{
+    background-color: maroon;
+}
+
+
+/* if we put the class on the last then this ... */
+
+/* according to the specificity with their values in this case the class aatributes takes priority as well and the last element in this case like .no takes the priority and background color and color set up of .no class */
+
+
+/* if we put the data attribute then this .... */
+
+/* according to the specificity with their values in this case the class aatributes takes priority as well and the last element in this case like .no takes the priority and background color and color set up of .no class */
+
+
+
+/* according to the cascading algorithm the last one has to be given much priority */
+
+/* but in the order of specificity how we going to give the priority So, the order of specificity is:
+
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
+
+/* so this is the priority we have to give in the order of specificity */
+
+
+
+
+
+
+/* data attributes examples... */
+
+/* the specificity of this selector is 10  */
+
+
+  [data-category = red] {
+    
+       background-color: red;
+  }
+
+
+[data-category = blue] {
+
+       background-color: blue;
+  }
+  
+
+  [data-category = green] {
+
+      background-color: green;
+  }
+
+
+  [data-x=a] {
+
+      background-color: yellow;
+  }
+
+
+
+
+
+
+
+
+  /* quiz :-  */
+  
+
+  a.harryclass.rohan-class[href]:hover {
+    color: red;
+  }
+
+
+  /* calculate its values ... */
+
+  /* a = 1        (element selector)
+
+  .harryclass.rohan-class = 10 + 10  =  20    (two classes)
+
+  [href] = 10      (data attribute)
+
+  :hover = 10       (pseudo-class)
+
+
+  total = 41 answer      */
+
+
+
+
+
+
+

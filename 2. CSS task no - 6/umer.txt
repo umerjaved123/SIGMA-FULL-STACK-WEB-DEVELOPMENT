@@ -1,0 +1,19 @@
+
+In CSS, specificity determines which style rules are applied to an element when multiple rules could apply. Here's a breakdown of the order of specificity:
+
+Inline Style: Styles applied directly to an HTML element using the style attribute. These styles have the highest specificity and will override other styles.
+
+ID Selector (#): Styles applied using an ID selector. IDs are unique to each element and have higher specificity than classes or element selectors.
+
+Class or Attribute Selector (.class, [attr]): Styles applied using class or attribute selectors. These selectors target multiple elements and have lower specificity than IDs but higher than element selectors.
+
+Element Selector (tag name): Styles applied using an element selector (e.g., div, p, h1). These styles target all elements of a specific type and have lower specificity than classes or IDs.
+
+Universal Selector (*): Styles applied using a universal selector. This selector targets all elements in the document and has the lowest specificity.
+
+In summary, the order of specificity determines which style rules take precedence when multiple rules apply to the same element. Styles applied with higher specificity override styles applied with lower specificity.
+
+
+
+
+

@@ -4,10 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Specificity & Cascade</title>
+    <link rel="stylesheet" href="umer.css">
 </head>
 <body>
 
     <h1>CSS Specificity & Cascade</h1>
+
+    <div>
+        <h2 class="no yes cred cyellow cpurple" data-z="b">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur facere nostrum quibusdam hic deserunt sunt magnam, sapiente vitae aliquam optio fuga similique! Unde ratione earum facilis vitae porro, iste ad!</h2>
+    </div>
+
+
+<!-- 
+    <div>
+        <h2 style="color: blue;  background-color: red;" class="no yes cred cyellow cpurple">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur facere nostrum quibusdam hic deserunt sunt magnam, sapiente vitae aliquam optio fuga similique! Unde ratione earum facilis vitae porro, iste ad!</h2>
+    </div> -->
+
+
+    <!-- but in the order of specificity how we going to give the priority So, the order of specificity is:
+
+    Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector 
+
+    according to the upper condition only way to change the inline style priority by adding important! to any of other attributes  -->
+
+
+
+    <!-- data attributes examples ... -->
+
+
+    <div class="box" data-category="red">Red Box</div>
+
+    <div class="box" data-category="blue">Blue Box</div>
+
+    <div class="box" data-category="green">Green Box</div>
+
+    <div class="box" data-x="a">Yellow Box</div>
+
+
+    <hr>
+<br>
+
+
+
     
+In CSS, specificity determines which style rules are applied to an element when multiple rules could apply. Here's a breakdown of the order of specificity:
+
+<hr>
+<br>
+
+Inline Style: Styles applied directly to an HTML element using the style attribute. These styles have the highest specificity and will override other styles.
+
+<hr>
+<br>
+
+
+ID Selector (#): Styles applied using an ID selector. IDs are unique to each element and have higher specificity than classes or element selectors.
+
+<hr>
+<br>
+
+
+Class or Attribute Selector (.class, [attr]): Styles applied using class or attribute selectors. These selectors target multiple elements and have lower specificity than IDs but higher than element selectors.
+
+<hr>
+<br>
+
+
+Element Selector (tag name): Styles applied using an element selector (e.g., div, p, h1). These styles target all elements of a specific type and have lower specificity than classes or IDs.
+
+<hr>
+<br>
+
+
+Universal Selector (*): Styles applied using a universal selector. This selector targets all elements in the document and has the lowest specificity.
+
+<hr>
+<br>
+
+
+In summary, the order of specificity determines which style rules take precedence when multiple rules apply to the same element. Styles applied with higher specificity override styles applied with lower specificity.
+
+
+
+
+    <!-- The Cascade Algorithm
+CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple.
+
+Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.
+
+Position and order of appearance: the order in which your CSS rules appear
+Specificity: an algorithm that determines which CSS selector has the strongest match
+Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS
+Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+Lets look into all these one by one -->
+
+<script src="umer.js"></script>    
 </body>
 </html>

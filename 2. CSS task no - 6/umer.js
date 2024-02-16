@@ -1,0 +1,1 @@
+alert("specificity in css and priority")

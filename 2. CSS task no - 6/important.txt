@@ -1,0 +1,57 @@
+Note 1 :----
+
+
+
+
+In CSS, specificity determines which style rules are applied to an element when multiple rules could apply. Here's a breakdown of the order of specificity:
+
+Inline Style: Styles applied directly to an HTML element using the style attribute. These styles have the highest specificity and will override other styles.
+
+ID Selector (#): Styles applied using an ID selector. IDs are unique to each element and have higher specificity than classes or element selectors.
+
+Class or Attribute Selector (.class, [attr]): Styles applied using class or attribute selectors. These selectors target multiple elements and have lower specificity than IDs but higher than element selectors.
+
+Element Selector (tag name): Styles applied using an element selector (e.g., div, p, h1). These styles target all elements of a specific type and have lower specificity than classes or IDs.
+
+Universal Selector (*): Styles applied using a universal selector. This selector targets all elements in the document and has the lowest specificity.
+
+In summary, the order of specificity determines which style rules take precedence when multiple rules apply to the same element. Styles applied with higher specificity override styles applied with lower specificity.
+
+
+
+
+
+
+Note 2 :----
+
+
+
+In CSS, specificity is a way to determine which styles are applied to an element when there are conflicting styles. 
+It's calculated based on the different parts of a selector.
+
+Here's a simplified explanation:
+
+Universal selector (*): 0
+
+Element selectors (div, p, etc.) and pseudo-elements (::before, ::after): 1
+
+Class selectors (.class), attribute selectors ([attribute]), and pseudo-classes (:hover, :nth-child()): 10
+
+ID selectors (#id): 100
+
+Inline styles (styles applied directly to an element's style attribute): 1000
+
+To calculate specificity:
+
+
+Start with 0.
+
+Add 1 for each element selector and pseudo-element.
+
+Add 10 for each class selector, attribute selector, and pseudo-class.
+
+Add 100 for each ID selector.
+
+Add 1000 for inline styles.
+
+For example, the selector div#content.article p would have a specificity of 111 (1 for div, 100 for #content, 10 for .article, and 1 for p).

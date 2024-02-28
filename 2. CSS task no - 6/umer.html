@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Specificity & Cascade</title>
     <link rel="stylesheet" href="umer.css">
 </head>
+
 <body>
 
     <h1>CSS Specificity & Cascade</h1>
@@ -15,7 +17,7 @@
     </div>
 
 
-<!-- 
+    <!-- 
     <div>
         <h2 style="color: blue;  background-color: red;" class="no yes cred cyellow cpurple">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur facere nostrum quibusdam hic deserunt sunt magnam, sapiente vitae aliquam optio fuga similique! Unde ratione earum facilis vitae porro, iste ad!</h2>
     </div> -->
@@ -42,47 +44,25 @@
 
 
     <hr>
-<br>
+    <br> In CSS, specificity determines which style rules are applied to an element when multiple rules could apply. Here's a breakdown of the order of specificity:
 
+    <hr>
+    <br> Inline Style: Styles applied directly to an HTML element using the style attribute. These styles have the highest specificity and will override other styles.
 
+    <hr>
+    <br> ID Selector (#): Styles applied using an ID selector. IDs are unique to each element and have higher specificity than classes or element selectors.
 
-    
-In CSS, specificity determines which style rules are applied to an element when multiple rules could apply. Here's a breakdown of the order of specificity:
+    <hr>
+    <br> Class or Attribute Selector (.class, [attr]): Styles applied using class or attribute selectors. These selectors target multiple elements and have lower specificity than IDs but higher than element selectors.
 
-<hr>
-<br>
+    <hr>
+    <br> Element Selector (tag name): Styles applied using an element selector (e.g., div, p, h1). These styles target all elements of a specific type and have lower specificity than classes or IDs.
 
-Inline Style: Styles applied directly to an HTML element using the style attribute. These styles have the highest specificity and will override other styles.
+    <hr>
+    <br> Universal Selector (*): Styles applied using a universal selector. This selector targets all elements in the document and has the lowest specificity.
 
-<hr>
-<br>
-
-
-ID Selector (#): Styles applied using an ID selector. IDs are unique to each element and have higher specificity than classes or element selectors.
-
-<hr>
-<br>
-
-
-Class or Attribute Selector (.class, [attr]): Styles applied using class or attribute selectors. These selectors target multiple elements and have lower specificity than IDs but higher than element selectors.
-
-<hr>
-<br>
-
-
-Element Selector (tag name): Styles applied using an element selector (e.g., div, p, h1). These styles target all elements of a specific type and have lower specificity than classes or IDs.
-
-<hr>
-<br>
-
-
-Universal Selector (*): Styles applied using a universal selector. This selector targets all elements in the document and has the lowest specificity.
-
-<hr>
-<br>
-
-
-In summary, the order of specificity determines which style rules take precedence when multiple rules apply to the same element. Styles applied with higher specificity override styles applied with lower specificity.
+    <hr>
+    <br> In summary, the order of specificity determines which style rules take precedence when multiple rules apply to the same element. Styles applied with higher specificity override styles applied with lower specificity.
 
 
 
@@ -98,6 +78,9 @@ Origin: the order in which CSS appears and where it comes from, whether that is 
 Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
 Lets look into all these one by one -->
 
-<script src="umer.js"></script>    
+    <h3>umer javed has done it without any problem man just go for it and do it </h3>
+
+    <script src="umer.js"></script>
 </body>
+
 </html>
